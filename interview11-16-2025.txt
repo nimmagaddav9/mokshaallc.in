@@ -1,1 +1,54 @@
 
+Lead Web Frontend Engineer — Interview Summary
+
+Moksha screened Vijay for a React-focused role on PIMCO’s Sales Command Center. The new web and mobile application will connect to Dynamics 365 through a FastAPI backend-for-frontend. The role requires three to four days onsite per week in Austin. React Native experience is a plus.
+
+The answers below summarize Vijay’s spoken responses. The transcript also contains AI-generated suggestions.
+
+INTERVIEW QUESTIONS AND ANSWERS
+
+1. Tell me about yourself.
+Vijay described building customer-facing and back-office banking portals at First Citizens Bank, including client enrollment, reporting, and cryptocurrency purchase integration. At United Airlines, he helped migrate a .NET application to React and built features such as Miles Pooling and Club Pass. He highlighted React, TypeScript, and REST API integration.
+
+2. What happens when a React app starts?
+The browser loads the HTML and JavaScript bundle, the entry file mounts the React tree, and the app initializes providers, routing, state, authentication, and data requests. Vijay used form submission to illustrate how the UI initiates an action and the backend saves the data.
+
+3. How would you structure a large React app?
+Organize by business feature, grouping pages, components, hooks, types, and tests. Put shared components and design tokens in a common folder and organize routing, authentication, and API clients separately.
+
+4. How do you share data between components?
+Keep state close to the components that use it. Use local state for component data, Context for user information or theme, a query layer for cached server data, and Redux for complex workflows.
+
+5. How do props and state differ?
+Props are read-only inputs passed from parent to child. State is data owned by a component. State updates schedule a render, and React compares the new output with the previous output before updating the DOM.
+
+6. How can a child pass data to its parent?
+Pass a callback from the parent to the child. Context or Redux can help when several components need access to shared state.
+
+7. What reusable component did you build from scratch?
+At First Citizens Bank, Vijay built role-based form and table components for client enrollment and user management. The parent supplied field definitions, permissions, values, and callbacks. The form handled validation, loading, errors, keyboard navigation, API submission, and feedback.
+
+8. What was your role in the United Airlines migration?
+He helped assess existing .NET pages and worked with product owners and UX designers to prioritize high-value features for incremental migration. He also built reusable components, reviewed code, addressed performance issues, and mentored teammates.
+
+9. What are React hooks, and which custom hooks have you built?
+Hooks let function components use state and share logic. Vijay cited useState, useEffect, useMemo, and useCallback. He built custom hooks for API loading, success, error, and retry states, as well as form validation.
+
+10. When do you use useEffect, and what does the dependency array do?
+Vijay uses effects to synchronize with external systems such as APIs, subscriptions, timers, and browser events. He explained that an empty dependency array runs the effect on mount and listed dependencies trigger it again when they change. He also discussed cleanup before a rerun and on unmount.
+
+11. What is your experience with performance optimization?
+He cited refactoring legacy screens at United Airlines, reducing bundle sizes with lazy loading, memoizing values and callbacks, and paginating large datasets to reduce rendering and API work.
+
+12. How have you handled SEO in React apps?
+He uses semantic HTML, clear headings and page titles, metadata, descriptive links, optimized images, and faster mobile loading. He discussed server-side rendering or pre-rendering for public pages.
+
+13. What is LCP, and how would you troubleshoot a slow result?
+Largest Contentful Paint measures how quickly the largest visible content element appears. Vijay cited a target of 2.5 seconds or less. He would identify the element, distinguish network delays from rendering delays with browser performance tools, optimize key assets, reduce render-blocking work, and retest on mobile and slower connections.
+
+AVAILABILITY, RATE, AND NEXT ROUND
+
+- Availability and commute. Vijay said his First Citizens Bank contract was ending and he could start once the background check cleared. He estimated a 20–30 minute commute to downtown Austin. When asked about other offers, he said he was focusing on local roles and gave no direct answer about whether he had an offer.
+- Contract terms. The recruiter quoted net-50 payment terms. Vijay cited an initial expectation of $85 and ultimately agreed to be submitted at $72/hour corp-to-corp.
+- Next round. The recruiter said they would send right-to-represent paperwork and arrange a one-hour technical interview with the implementation partner’s principal engineer. The round could include coding. Vijay offered availability after 5 p.m. that day or the following morning and asked for at least one hour’s notice. The call ended before a time was confirmed.
+
